@@ -20,8 +20,13 @@
 <pre>
   * on-prem users cannot see Office 365 user's free/busy time + schedules and vice versa
 </pre
-<p>Tasks:</p>
-<p>1) Working with Weston on issue #3<p>
+<p>Tuesday 9/13/16:</p>
+<p>1) Working with Weston on issue #3.  Removed expired federation trust certificate from the store in MMC and from RKEX13CAS1 ecp. RKEX13CAS2 has a new federation trust certification that expires in year 2021. Exported that and imported into RKEX13CAS1. For some reason the old certificate in RKEX13CAS1 re-appeared and prevented us from going further in fixing the free/busy issue.<p>
+<p>2) Microsoft support called back on issue #1. They suggested exporting and importing the content in public folder.<p>
+<br>
+<p>Wednesday 9/14/16:</p>
+<p>1) Issue #2 got escalated to Microsoft Office Online team.  Working with the Online team. Created cptestuser5 test account from Exchange 2013 powershell. Corrected the X500 address for cptestuser4 account. Ran full synchronization dirsync but dirsync seems to be not working. Andrew is looking into it.<p>
+
 </body>
 
 </html>
