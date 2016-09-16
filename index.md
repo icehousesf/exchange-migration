@@ -43,8 +43,8 @@
 
 *Thursday 9/15/16:*
 
-1. Continue working with Microsoft support on issue #2. Below are some updates on the test accounts being worked on. I think this account has Exchange GUID configured as well.
-  * cptestuser5 - changed the primary SMTP address a couple of times.  The last time was changing it back to cptestuser5@wsgc.com and was having problem syncing to the cloud.
+1. Continue working with Microsoft support on issue #2. Below are some updates on the test accounts being worked on.
+  * cptestuser5 - changed the primary SMTP address a couple of times.  The last time was changing it back to cptestuser5@wsgc.com and was having problem syncing to the cloud. I think this account has Exchange GUID configured as well.
   * cptestuser6 - configured Exchange GUID from Exchange 2013 powershell to match the GUID on Office 365. Was having problem configuring the mail profile for Outlook client for this account.
   * cptestuser7 - configured Exchange GUID from Exchange 2013 powershell to match the GUID on Office 365. 
   * *note:* Do not make any changes to the 3 accounts per Microsoft support
