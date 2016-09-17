@@ -10,7 +10,7 @@
 
 ### 1) Public folder sync issue
 
-  * close to 80 public folders out of 26,000 are not synching up.
+  * close to 80 public folders out of 26,000 + are not synching up.
 
 ### 2) Public folder access issue
 
@@ -20,6 +20,7 @@
 ### 3) Free/Busy Time issue
 
   * on-prem users cannot see Office 365 user's free/busy time + schedules and vice versa
+  * *note:* Need to resolve issue #4 first before continuing
 
 ### 4) Federation Trust certificate expired issue
 
@@ -31,15 +32,10 @@
 
 ## Updates:
 
-*Tuesday 9/13/16:*
+*Friday 9/16/16:*
 
-1. Working with Weston on issue #3. Removed expired federation trust certificate from the store in MMC and from RKEX13CAS1 ecp. RKEX13CAS2 has a new federation trust certification that expires in year 2021. Exported that and imported into RKEX13CAS1. For some reason the old certificate in RKEX13CAS1 re-appeared and prevented us from going further in fixing the free/busy issue.  Waiting for Winoto to fix the certificate.
-
-2. Microsoft support called back on issue #1. They suggested exporting and importing the public folder content from one server to another.
-
-*Wednesday 9/14/16:*
-
-1. Issue #2 got escalated to Microsoft Office Online team. Working with the Online team. Created cptestuser5 test account from Exchange 2013 powershell. Corrected the X500 address for cptestuser4 account. Ran full synchronization dirsync but dirsync seems to be not working. Andrew is looking into it.
+1. Continue working with Microsoft support on issue #2. Got cptestuser5 and cptestuser6 working. The fix seems have to do with the ExchangeGUID and the X500 address. Asked Microsoft support for steps on what needs to be changed and how to do it so we can try it on other test accounts.
+2. For issue #1, Andrew exported contents on 3 public folders from one server and imported them to the other server. I ran PF reports for comparison today and the results are not as expected. It seems like the imported items got replicated to the original server on one of the 3 PFs.  The report for the other 2 PFs do not making sense.
 
 *Thursday 9/15/16:*
 
@@ -48,3 +44,13 @@
   * cptestuser6 - configured Exchange GUID from Exchange 2013 powershell to match the GUID on Office 365. Was having problem configuring the mail profile for Outlook client for this account.
   * cptestuser7 - configured Exchange GUID from Exchange 2013 powershell to match the GUID on Office 365. 
   * *note:* Do not make any changes to the 3 accounts per Microsoft support
+
+*Wednesday 9/14/16:*
+
+1. Issue #2 got escalated to Microsoft Office Online team. Working with the Online team. Created cptestuser5 test account from Exchange 2013 powershell. Corrected the X500 address for cptestuser4 account. Ran full synchronization dirsync but dirsync seems to be not working. Andrew is looking into it.
+
+*Tuesday 9/13/16:*
+
+1. Working with Weston on issue #3. Removed expired federation trust certificate from the store in MMC and from RKEX13CAS1 ecp. RKEX13CAS2 has a new federation trust certification that expires in year 2021. Exported that and imported into RKEX13CAS1. For some reason the old certificate in RKEX13CAS1 re-appeared and prevented us from going further in fixing the free/busy issue.  Waiting for Winoto to fix the certificate.
+
+2. Microsoft support called back on issue #1. They suggested exporting and importing the public folder content from one server to another.
