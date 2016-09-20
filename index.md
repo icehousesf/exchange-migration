@@ -28,9 +28,13 @@
 
 ### 5) Exchange 2013 mailbox databases backup issue
 
-  * Andrew is working with Microsoft support and WSI BAR team
+  * Andrew is working with Microsoft support and the WSI BAR team
 
 ## Updates:
+
+*Monday 9/19/16:*
+
+1. Continued working on issue #2. Fixed test accounts (cptestuser3 and cptestuser7) by configuring the ExchangeGUID and the X500 address. We configured (cptestuser1, cptestuser2, cptestuser4, cptestuser8) and kicked off the full dirsync.
 
 *Friday 9/16/16:*
 
