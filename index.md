@@ -32,6 +32,12 @@
 
 ## Updates:
 
+*Tuesday 9/20/16:*
+
+1. Dirsync completed last night and validated cptestuser1,2,4,8 successfully.  Those accounts can access PFs now. Reconfigured sgtestuser5,6, ran dirsync and validated successfully. Created a new test user cptestuser12 by following the steps provided by Microsoft support and validated successfully as well.  Question:  Should we do more testing with the migrated users?
+2. Working on issue #3. Per Winoto, the federation trust certificate is probably no longer an issue. Tried to reconfigure the federation trust in on-prem admin center but was unsuccessful. It failed needing TXT record for the domain. 
+3. Discussed with Hugo/Collin/Breon/Beatrice on hybrid deployment protocols, ports and endpoints. One thing brought up was the primary SMTP address needs to be equal as UPN. Mofidied the primary SMTP address of pwmtest20 from @stores.xxxxx.com to @wsgc.com. Mentioned the TXT record issue in the meeting. Will send Hugo the TXT records. Should we open a case with Microsoft to fix the free/busy issue? 
+
 *Monday 9/19/16:*
 
 1. Continued working on issue #2. Fixed test accounts (cptestuser3 and cptestuser7) by configuring the ExchangeGUID and the X500 address. We configured (cptestuser1, cptestuser2, cptestuser4, cptestuser8) and kicked off the full dirsync.
