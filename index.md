@@ -12,7 +12,7 @@
 
   * close to 80 public folders out of 26,000 + are not synching up.
 
-### 2) Public folder access issue
+### 2) Public folder access issue - RESOLVED
 
   * mailboxes created directly on Office 365 are not able to see public folder hierarchy
   * mailboxes migrated from on-prem to the cloud has no issues
@@ -31,6 +31,15 @@
   * Andrew is working with Microsoft support and the WSI BAR team
 
 ## Updates:
+
+*Wednesday 9/21/16:*
+
+1. Working on firewall rules for Hybrid NCCR. Emailed Hugo for help on a few more questions. 
+2. Ran Hybrid Configuration Wizard (HCW).  It failed on verifying the TXT records.  Emailed Hugo for help.
+3. Email testing - send and receive emails between 2 O365 users (cptestuser1 and cptestuser2) and my cpascual on-prem account was successful.
+4. Email testing - the primary SMTP address for pwmtest20 was changed from @stores.williams-sonoma.com to @wsgc.com.  Received NDR when sending email from my Exchange on-prem account.
+5. Test public folder access for users migrated from Exchange 2013 on-prem to Office 365. Migrated cptestuser13 and cptestuser14 to the cloud successfully.  Sending/receiving emails and accessing public folders using Outlook client were successful before and after the migration.
+  * *note:* There is no need to re-create Outlook profile after the migration
 
 *Tuesday 9/20/16:*
 
