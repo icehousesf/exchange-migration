@@ -32,6 +32,13 @@
 
 ## Updates:
 
+*Thursday 9/22/16:*
+
+1. Testing emails between cptestuser13 (migrated to Office 365 mailbox) and my on-prem mailbox.  Got NDR when sending to cptestuser13. Receiving from cptestuser13 has no problem.  Found out cptestuser 13 do not have Office 365 license yet. Assigned E1 license to cptestuser13. Waiting for dirsync to complete before can test further.
+2. Continued working on the firewall rules for Hybrid NCCR. Discussed with Hugo on the additional questions. 
+3. Working on TXT records with Breon.  Breon created the public DNS TXT record for stores.potterybarn.com. He said TXT record has already been created for wsgc.com. The wsgc.com TXT record is needed for federation certificate renewal. However HCW still failed on validated. 
+ Suspecting problem was caused by the firewall. Going to check with security team tomorrow. Once get this working, will have to create TXT records for the other 11 domains.
+
 *Wednesday 9/21/16:*
 
 1. Working on firewall rules for Hybrid NCCR. Emailed Hugo for help on a few more questions. 
