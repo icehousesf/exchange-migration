@@ -17,10 +17,10 @@
   * mailboxes created directly on Office 365 are not able to see public folder hierarchy
   * mailboxes migrated from on-prem to the cloud has no issues
 
-### 3) Free/Busy Time issue
+### 3) Cross-Premises Free/Busy Information, mail tips, and out of office features issue
 
-  * on-prem users cannot see Office 365 user's free/busy time + schedules and vice versa
-  * *note:* Need to resolve issue #4 first before continuing
+  * on-prem users cannot see Office 365 user's free/busy Information / other features and vice versa
+  * *note:* Need to resolve issue #4 first before I can proceed
 
 ### 4) Federation Trust certificate expired issue
 
@@ -31,6 +31,12 @@
   * Andrew is working with Microsoft support and the WSI BAR team
 
 ## Updates:
+
+*Friday 9/23/16:*
+
+1. Updated firewall rules in the excel file and uploaded it to Service Now. Emailed Erik to review and approve.
+2. Compared PFs.  5 of the 6 PFs that Andrew exported and imported were in sync.
+3. Working on HCW. Sandeep from IT security confirmed my normal and my a_ accounts are not blocked by firewall. But the issue still persists. 
 
 *Thursday 9/22/16:*
 
