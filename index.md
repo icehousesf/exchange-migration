@@ -4,7 +4,7 @@
 
 ---
 
-# Exchange Migration Project Updates:
+# Exchange Migration Project Updates for September 2016:
 
 ## 5 Issues:
 
@@ -31,6 +31,14 @@
   * Andrew is working with Microsoft support and the WSI BAR team
 
 ## Updates:
+
+*Monday 9/26/16:*
+
+1. Working on issue #1. Created cptestuser21 on Exchange 2007 server. Used cptestuser21 and my account to export / import some PFs.
+2. Working on issue #3, opened Microsoft support request # 116092614717505. HCW was trying to connect from hybrid server RKEX13CAS2 to Office 365 and was getting blocked. Submitted REQITEM0099625 to open the ports. Asked Breon to create TXT records for the other 10 domains.
+3. Need to troubleshoot NDRs for cptestuser13,14,4.
+4. Test accessing PFs using sgtestuser4 via both OWA and the Outlook client successfully.  The user was connected to RKEX10PF1.
+
 
 *Friday 9/23/16:*
 
