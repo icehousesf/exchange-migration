@@ -32,6 +32,11 @@
 
 ## Updates:
 
+*Tuesday 9/27/16:*
+
+1. Working on HCW. Sandeep from IT security has implemented the NCCR. HCW log shows Access Denied error.  Kory from Microsoft support said maybe the SSL inspection is causing problem. Sandeep is checking with his team.
+2. RKEX10PF1 blue screen after patching. L2 is working with Microsoft support. I tried to repoint my mailbox database TestDB to Exchange 2007 PF server but my Outlook 2016 client still connects to RKEX10PF1.  Basically re-pointing didn’t work.  Although the MB database shows pointing to the Exchange 2007 PF server. There is no database-level setting in Exchange 2013. Exchange 2013 has a mailbox-level ability to specify the public folder mailbox, but by default Exchange auto-calculates the per-user hierarchy mailbox.  
+
 *Monday 9/26/16:*
 
 1. Working on issue #1. Created cptestuser21 on Exchange 2007 server. Used cptestuser21 and my account to export / import some PFs.
