@@ -32,6 +32,12 @@
 
 ## Updates:
 
+*Wednesday 9/28/16:*
+
+1. Fixed the NIC teaming issue on RKEX10PF1. However my account and some cptestuserx test accounts are not able to connect to RKEX10PF1. However cptest2010, a mailbox on RKEX10PF1 server, has no problem connecting to it.
+2. Working on issue #4. Removed old Federation Trust from Ex2010 console and created new one from RKEX13CAS2 admin center.  It generated new TXT records.  Asked Breon to replace the old ones with the new ones.
+3. Working on issue #1.  49 PFs out of synch today. Exported and imported some PFs. Jenn highlighted a list of PFs that must be synchronized.  As of today there are 12 more PFs on Jenn's list that need synchronized.
+
 *Tuesday 9/27/16:*
 
 1. Working on HCW. Sandeep from IT security has implemented the NCCR. HCW log shows Access Denied error.  Kory from Microsoft support said maybe the SSL inspection is causing problem. Sandeep is checking with his team.
