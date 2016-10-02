@@ -8,7 +8,7 @@
 
 ## 5 Issues:
 
-### 1) Public folder sync issue
+### 1) Public folder sync issue - RESOLVED
 
   * close to 80 public folders out of 26,000 + are not synching up.
 
@@ -22,7 +22,7 @@
   * on-prem users cannot see Office 365 user's free/busy Information / other features and vice versa
   * *note:* Need to resolve issue #4 first before I can proceed
 
-### 4) Federation Trust certificate expired issue
+### 4) Federation Trust certificate expired issue -RESOLVED
 
   * Winoto is working with Microsoft support on this issue
 
@@ -31,6 +31,10 @@
   * Andrew is working with Microsoft support and the WSI BAR team
 
 ## Updates:
+
+*Friday night of 9/30/16:*
+
+1. Andrew implemented CHG59854 pointing all production Exchange mailboxe databases in 2013 and 2007 servers to RKEX10PF server. I tested the Citrix Care Center Win7 desktop and my Outlook 2016 client in the office, both connected to RKEX10PF1 and was able to see today's postings (from the scripts) in 2 of the 5 PFs (Sales and DTC) which I happened to have permissions to.
 
 *Friday 9/30/16:*
 
