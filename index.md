@@ -32,6 +32,16 @@
 
 ## Updates:
 
+*Friday 9/30/16:*
+
+1. Discussed with Andrew on implementing CHG59854 Change PF referral from RKEXPF1 to RKEX10PF1. Discussed compatibility between Outlook clients / Exchange servers / mailbox database to PF referral. RKEX10PF1 has only 39 windows updates as of now. Checking another server with the same OS version, it has 386 windows updates. Emailed L2 asking if RKEX10PF1 has all the patches applied.
+2. Discussed with Travis from Security team on REQITEM0095351. Modified the firewall rule and uploaded to Service Now.
+3. Testing posting data via Access database scripst to the new public folder server RKEX10PF1 with Steve Cahoon successfully.  The postings were replicated to the old public folder server RKEXPF1 within 15 minutes successfully as well.  The users will not have to wait for replication to complete after tonight as we will be implementing CHG59854 at 11 PM Pacific tonight to point all the user mailbox databases to the new public folder server RKEX10PF1.
+
+*Thursday 9/29/16:*
+
+1. Working with Kory from Microsoft on issue #3. Ran HCW. It was completed all the way to the end but with some issues.  *.wsgc.com certificate was missing in the server during the HCW run.  He said it is there but not showing.   So it needs to be investigated.    The connectors were not configured correctly after HCW run and we fixed it manually.  The To tab for "Autodiscover Exchange 2010" rule in TMG was modified from owa365.wsgc.com to owa2.wsgc.com.  Changed the targetAddress from @service.wsgc.com to  @wsiadmin2.mail.onmicrosoft.com for some of the cptestuserx accounts.  Configured the TargetSharingEpr in OrganizationRelationship in O365.  Configured the AutodiscoverVirtualDirectory and WebServicesVirtualDirectory for the 3 x Ex13Cas and 4 x Ex13MB servers.
+
 *Wednesday 9/28/16:*
 
 1. Fixed the NIC teaming issue on RKEX10PF1. However my account and some cptestuserx test accounts are not able to connect to RKEX10PF1. However cptest2010, a mailbox on RKEX10PF1 server, has no problem connecting to it.
