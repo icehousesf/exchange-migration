@@ -32,10 +32,6 @@
 
 ## Updates:
 
-*Friday night of 9/30/16:*
+*Monday 10/3/16:*
 
-1. 
-
-*Friday 9/30/16:*
-
-1. 
+1. Created CHG60144 for Office 2016 and Office 365 migration.
