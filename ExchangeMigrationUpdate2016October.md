@@ -35,3 +35,14 @@
 *Monday 10/3/16:*
 
 1. Created CHG60144 for Office 2016 and Office 365 migration.
+
+*Tuesday 10/4/16:*
+
+1. Issue: Got NDRs when sending emails from my Exchange on-prem account to cptestuserx O365 users. Test sending email to cptestuser3 and cptestuser4 from my Exchange on-prem account. Changed the TargetAddress from SMTP:cptestuser3@wsiadmin2.mail.onmicrosoft.com to SMTP:cptestuser3@service.wsgc.com for cptestuser3 and cptestuser4.  cptestuser3 works right away but not cptestuser4.
+
+*Wednesday 10/5/16:*
+
+1. Compared AD attributes on cptestuser3 and cptestuser4. cptestuser4 was missing the smtp:username@service.wsgc.com address. Created that smtp address. Test sending email from my Exchange on-prem account to cptestuser3.  Very strange... waited for 10 to 15 minutes for the first email sent to cptestuser3 and it didn't show up.  Sent a 2nd test message and both showed up at the same time.  Sent the 3rd message and it showed up immediately.
+2. Opened Microsoft Support request number: 116100514761395- Issue with Outbound TLS emails / Send connectors. Created a registry key on the 2013 ET servers to fix the problem. The edge sync was broken on all 3 servers. Removed and recreated them.
+
+
