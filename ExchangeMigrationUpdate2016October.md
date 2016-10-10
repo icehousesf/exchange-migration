@@ -32,6 +32,14 @@
 
 ## Updates:
 
+*Friday 10/7/16:*
+
+1. Ran a comparison between RKEXPF1 and RKEX10PF1 servers today to see how the PFs doing after the re-pointing of MB DBs to the RKEX10PF1 server. There are 41 PFs are out of sync.
+
+*Thursday 10/6/16:*
+
+1. Document some Exchange configurations using Powershell.
+
 *Wednesday 10/5/16:*
 
 1. Compared AD attributes on cptestuser3 and cptestuser4. cptestuser4 was missing the smtp:username@service.wsgc.com address. Created that smtp address. Test sending email from my Exchange on-prem account to cptestuser3.  Very strange... waited for 10 to 15 minutes for the first email sent to cptestuser3 and it didn't show up.  Sent a 2nd test message and both showed up at the same time.  Sent the 3rd message and it showed up immediately.
