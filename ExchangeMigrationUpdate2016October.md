@@ -32,6 +32,10 @@
 
 ## Updates:
 
+*Wednesday 10/12/16:*
+
+1. For issue #3, NCCR for hybrid has been implemented finally. Free/Busy is working now going the other direction. My Office 365 test account was able to see my on-prem mailbox free busy meetings. It could see my attendee details as well. However the target address of the Office 365 users needs to be setup in a certain way in order to work. Therefore we will be doing more testings to confirm that and make sure free busy and mail flow work properly. Another test will be doing is mail tips.
+
 *Friday 10/7/16:*
 
 1. Ran a comparison between RKEXPF1 and RKEX10PF1 servers today to see how the PFs doing after the re-pointing of MB DBs to the RKEX10PF1 server. There are 41 PFs are out of sync.
