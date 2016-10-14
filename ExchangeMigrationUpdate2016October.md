@@ -32,6 +32,12 @@
 
 ## Updates:
 
+*Thursday 10/13/16:*
+
+1. Working with Kory on issue #3. Configured smarthost for “Outbound to Office 365” Send Connector with wsgc-com.mail.protection.outlook.com in Exchange 2013. Configured virtual directories for WebServices, OWA, ECP, MAPI, OAB and ActiveSync on all 7 Exchange 2013 CAS and MB servers. Modified the the “external host name” of Outlook Anywhere from owa2.wsgc.com to hybrid.wsgc.com on all 7 Exchange 13 servers. Ran HCW from RKEX13CAS2 server using my regular AD account on wsgc.com domain only successfully. Added wsiadmin2.onmicrosoft.com to “Outbound to Office 365” Send Connector and added  wsgc-com.mail.protection.outlook.com to Smart Host. Troubleshooting the TargetAddress issue - Exchange on-prem user not able to send email to O365 users.
+
+2. Winoto got the outbound fax working by creating a Send connector in Exchange 2013.
+
 *Wednesday 10/12/16:*
 
 1. For issue #3, NCCR for hybrid has been implemented finally. Free/Busy is working now going the other direction. My Office 365 test account was able to see my on-prem mailbox free busy meetings. It could see my attendee details as well. However the target address of the Office 365 users needs to be setup in a certain way in order to work. Therefore we will be doing more testings to confirm that and make sure free busy and mail flow work properly. Another test will be doing is mail tips.
