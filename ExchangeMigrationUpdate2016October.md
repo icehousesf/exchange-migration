@@ -6,7 +6,7 @@
 
 # Exchange Migration Project Updates for October 2016:
 
-## 5 Issues:
+## 6 Issues:
 
 ### 1) Public folder sync issue - RESOLVED
 
@@ -17,7 +17,7 @@
   * mailboxes created directly on Office 365 are not able to see public folder hierarchy
   * mailboxes migrated from on-prem to the cloud has no issues
 
-### 3) Cross-Premises Free/Busy Information, mail tips, and out of office features issue
+### 3) Cross-Premises Free/Busy Information, mail tips, and out of office features issue - RESOLVED for Free/Busy
 
   * on-prem users cannot see Office 365 user's free/busy Information / other features and vice versa
   * *note:* Need to resolve issue #4 first
@@ -30,11 +30,25 @@
 
   * Andrew is working with Microsoft support and the WSI BAR team
 
+### 6) Outlook client via Outlook Anywhere Issue 
+
+  * Outlook client from home is connecting to the old endpoint owa2.wsgc.com instead of the new hybrid.wsgc.com
+  * Also getting certificate alert for autodiscover.rejuvention.com during Outlook profile creation
+  * Cezar is working with Microsfot support on this
+
 ## Updates:
+
+*Friday 10/14/16:*
+
+1. Working with Kory on outbound mail issue from Exchange 2013 to @admin2.mail.onmicrosoft.com. Exchange on-prem user not able to send email to O365 users. There is no outbound connection for Exchange 2013 ET servers going out to O365.  Created new NCCR REQ0059794. Sandeep Kumar from IT security team is helping me.
+
+2. Confirmed free/busy still works in both directions.  My Exchange on-prem account can see O365 test account’s free/busy and vice versa.  O365 test accounts used were cptestuser5 and 6 with targetAddress set to @wsiadmin2.mail.onmicrosoft.com.
+
+3. For issue #6, opened a new case #116101414803789 with Microsoft support. Worked with Rakesh from Microsoft. My account has full access permissions to RejuvWhiteGloves shared mailbox. Removed permissions resolved the certificate alert issue. Will look into the hybrid.wsgc.com issue on Monday.
 
 *Thursday 10/13/16:*
 
-1. Working with Kory on issue #3. Configured smarthost for “Outbound to Office 365” Send Connector with wsgc-com.mail.protection.outlook.com in Exchange 2013. Configured virtual directories for WebServices, OWA, ECP, MAPI, OAB and ActiveSync on all 7 Exchange 2013 CAS and MB servers. Modified the the “external host name” of Outlook Anywhere from owa2.wsgc.com to hybrid.wsgc.com on all 7 Exchange 13 servers. Ran HCW from RKEX13CAS2 server using my regular AD account on wsgc.com domain only successfully. Added wsiadmin2.onmicrosoft.com to “Outbound to Office 365” Send Connector and added  wsgc-com.mail.protection.outlook.com to Smart Host. Troubleshooting the TargetAddress issue - Exchange on-prem user not able to send email to O365 users.
+1. Working with Kory on issue #3. Configured smarthost for “Outbound to Office 365” Send Connector with wsgc-com.mail.protection.outlook.com in Exchange 2013. Configured virtual directories for WebServices, OWA, ECP, MAPI, OAB and ActiveSync on all 7 Exchange 2013 CAS and MB servers. Modified the the “external host name” of Outlook Anywhere from owa2.wsgc.com to hybrid.wsgc.com on all 7 Exchange 13 servers. Ran HCW from RKEX13CAS2 server using my regular AD account on wsgc.com domain only successfully. Added wsiadmin2.onmicrosoft.com to “Outbound to Office 365” Send Connector and added  wsgc-com.mail.protection.outlook.com to Smart Host. Troubleshooting the TargetAddress issue.
 
 2. Winoto got the outbound fax working by creating a Send connector in Exchange 2013.
 
