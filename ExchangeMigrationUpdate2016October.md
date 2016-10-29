@@ -38,6 +38,27 @@
 
 ## Updates:
 
+*Friday 10/28/16:*
+
+1. Talked to Pranali from Microsoft about the case with Kory. Opened a new case SR#616102791826665 as suggested by Pranali. 
+
+2. Investigated on Karen Achille license's  issue. Her license was removed mysteriously. Turned out it was removed by Sailpoint.
+
+3. Working with Jenn, Fred Morton from Sailpoint, Steve Claussen, Michael Butcher, Winoto, Jack Lin from IT security on the Sev2 issue. Sailpoint made changes to the AD attributes and caused all these issues. Fred is identifying all the affected users.
+
+*Thursday 10/27/16:*
+
+1. Opened Office 365 support case #616102791826665 - noticed license for some Office 365 users got removed. Karen Achille (KAchille) is one of them. According to MS support, it could take 24 hours for the activity to get logged. Will check tomorrow.
+
+*Wednesday 10/26/16:*
+
+1. NCCR REQITEM0101593 for communication between Exchange 2013 ET servers and Office 365 has been implemented. Test sending email from my on-prem account to cptestuser5 and 6 still not working. Travis found out 199.87.9.8, the external IP address of an old ACE load balancer, is getting blocked. He made a change to the firewall to allow 199.87.9.8 access to the mail destination.  This solved the mail flow problem from on-prem to O365 for admin2.mail.onmicrosoft.com domain. Will work with Breon from data networking team to use F5 instead of ACE. 
+
+2. NCCR REQITEM0095351 for O365 and Exchange 2013 MRS Proxy communication has been implemented. Found out today that Kory is no longer with Microsoft.
+
+3. Problem migrating users ngazmen from on-prem to O365.  It worked with my cptestuser15 test account. So might be user specific issue.
+
+
 *Friday 10/14/16:*
 
 1. Working with Kory on outbound mail issue from Exchange 2013 to @admin2.mail.onmicrosoft.com. Exchange on-prem user not able to send email to O365 users. There is no outbound connection for Exchange 2013 ET servers going out to O365.  Created new NCCR REQ0059794. Sandeep Kumar from IT security team is helping me.
